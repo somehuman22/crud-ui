@@ -1,0 +1,6 @@
+{% extends "layouts/main.html" %} {% block content %}
+<div>
+    <form action="http://localhost:5000/new" method="post">
+        {{form.title}} <br>{{form.content}}<br>{{form.submit}}
+    </form>
+</div>{% endblock %}

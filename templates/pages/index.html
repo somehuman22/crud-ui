@@ -1,0 +1,12 @@
+{% extends "layouts/main.html" %} {% block content %}
+<div>
+    <h1>Home Page</h1>
+    <ul>
+        {% for post in posts %}
+        <li>{{post.title}}<br><a href={{url_for( 'show',id=post.id)}}>View</a></li>
+
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
